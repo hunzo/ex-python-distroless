@@ -37,7 +37,10 @@ if __name__ == '__main__':
         # 'workers': number_of_workers(),
         'timeout': 5,
         # 'worker_class': 'gevent',
-        'threads': 10,
+        'threads': 2,
+        'workers': 2,
+        'access_logfile': '-',
+        'error_logfile': '-',
         'workers': 2,
         'raw_env': ["TEST=From Config Files"],
         # 'reload': True
