@@ -36,8 +36,9 @@ if __name__ == '__main__':
         'bind': '%s:%s' % ('0.0.0.0', '8080'),
         # 'workers': number_of_workers(),
         'timeout': 5,
-        # 'threads': 10,
-        # 'workers': 2,
+        # 'worker_class': 'gevent',
+        'threads': 10,
+        'workers': 2,
         'raw_env': ["TEST=From Config Files"],
         # 'reload': True
     }
