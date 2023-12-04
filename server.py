@@ -35,8 +35,10 @@ if __name__ == '__main__':
     options = {
         'bind': '%s:%s' % ('0.0.0.0', '8080'),
         # 'workers': number_of_workers(),
-        'workers': 2,
+        'timeout': 5,
+        # 'threads': 10,
+        # 'workers': 2,
         'raw_env': ["TEST=From Config Files"],
-        'reload': True
+        # 'reload': True
     }
     StandaloneApplication(app, options).run()
